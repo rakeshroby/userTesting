@@ -17,7 +17,7 @@ describe('Validate request trial functionality', () => {
 
   it('Request Trial', () => {
       cy.intercept('POST', '/leadCapture/save2').as('request')
-      homePage.getRequestTrialButton().next().click({ force:true })
+      homePage.getRequestTrialButton().click({ force:true })
       requestModal.firstNameField().type(details.firstName)
       requestModal.lastNameField().type(details.lastName)
       requestModal.titleField().type(details.title)
