@@ -20,7 +20,6 @@
         "mochaFile": "cypress/reports/junit/results-[hash].xml"
         }
     },
-    "video": false,
     "pageLoadTimeout": 90000,
     "projectId": "jkrru1"
 }
