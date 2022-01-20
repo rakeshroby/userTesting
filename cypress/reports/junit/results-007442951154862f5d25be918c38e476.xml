@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="15.6060" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-20T08:41:39" tests="0" file="cypress/integration/examples/homePageValidation.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="HomePage Validation" timestamp="2022-01-20T08:41:39" tests="1" time="15.5920" failures="0">
+    <testcase name="HomePage Validation Validate elements on home page" time="15.5030" classname="Validate elements on home page">
+    </testcase>
+  </testsuite>
+</testsuites>

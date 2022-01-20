@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="8.9280" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-20T11:35:00" tests="0" file="cypress/integration/examples/requestTrial.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Validate request trial functionality" timestamp="2022-01-20T11:35:00" tests="1" time="8.9170" failures="0">
+    <testcase name="Validate request trial functionality Request Trial" time="8.7150" classname="Request Trial">
+    </testcase>
+  </testsuite>
+</testsuites>

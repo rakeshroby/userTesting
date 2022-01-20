@@ -1,0 +1,22 @@
+name: E2E tests on userTesting
+on: 
+  workflow_dispatch:
+  schedule:
+  - cron: "0 9 * * *"
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: [1, 2, 3]
+    container: cypress/browsers:node12.13.0-chrome78-ff70
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cypress-io/github-action@v2
+        with:
+          install-command: npm install
+          working-directory: ./
+          record: true
+          parallel: true
+          command: npm run test

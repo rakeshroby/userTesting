@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-20T11:33:29.754Z",
+    "end": "2022-01-20T11:34:58.904Z",
+    "duration": 89150,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3ecadb2e-619d-4908-9f11-a87fd6d37e3c",
+      "title": "",
+      "fullFile": "cypress/integration/examples/homePageValidation.spec.js",
+      "file": "cypress/integration/examples/homePageValidation.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a99d745d-9e86-4354-ba9f-a426a729a768",
+          "title": "HomePage Validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate elements on home page",
+              "fullTitle": "HomePage Validation Validate elements on home page",
+              "timedOut": null,
+              "duration": 89041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_index.homePage.verifyPlatformMenu();\n_index.homePage.verifySolutionMenu();",
+              "err": {},
+              "uuid": "11dfeb13-3c87-4d2d-a2d3-afe8924d18db",
+              "parentUUID": "a99d745d-9e86-4354-ba9f-a426a729a768",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "11dfeb13-3c87-4d2d-a2d3-afe8924d18db"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 89041,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

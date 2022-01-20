@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-01-20T11:42:24.431Z",
+    "end": "2022-01-20T11:42:34.887Z",
+    "duration": 10456,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2ec46387-a40e-431c-bf23-c0067dba75a4",
+      "title": "",
+      "fullFile": "cypress/integration/examples/requestTrial.spec.js",
+      "file": "cypress/integration/examples/requestTrial.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bb1c79a-cd7a-4071-8556-1195faa095f4",
+          "title": "Validate request trial functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Request Trial",
+              "fullTitle": "Validate request trial functionality Request Trial",
+              "timedOut": null,
+              "duration": 10314,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('POST', '/leadCapture/save2').as('request');\n_index.homePage.getRequestTrialButton().click();\n_index.requestModal.firstNameField().type(details.firstName);\n_index.requestModal.lastNameField().type(details.lastName);\n_index.requestModal.titleField().type(details.title);\n_index.requestModal.emailField().type(details.email);\n_index.requestModal.phoneField().type(details.phone);\n_index.requestModal.compnayField().type(details.companyName);\n_index.requestModal.noOfEmployeesField().select(details.noOfEmployees);\n_index.requestModal.businessField().select(details.business);\n_index.requestModal.countryField().select(details.country);\n_index.requestModal.stateField().select(details.state);\n_index.requestModal.requestButton().click();\ncy.wait('@request').its('response.statusCode').should('eq', 200);\n_index.requestModal.sucessfulMessage();",
+              "err": {},
+              "uuid": "9565bb4b-7a3c-4dd1-a70a-8f22bf060ce2",
+              "parentUUID": "5bb1c79a-cd7a-4071-8556-1195faa095f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9565bb4b-7a3c-4dd1-a70a-8f22bf060ce2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10314,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/.jsons",
+        "charts": true,
+        "reportPageTitle": "My Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
